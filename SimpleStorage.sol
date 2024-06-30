@@ -5,7 +5,7 @@ contract SimpleStorage {
     // Solidity basic data types: boolean, uint, int, address, bytes
 
     bool hasFavoriteNumber = true;
-    uint256 favoriteNumber = 123; // uint16, uint32, uint64, uint128 can also be used, but it is good practice to be explicit in Solidity
+    uint256 favoriteNumber = 123; // uint16, uint32, uint64, uint128 can also be used, but it is a good practice to be explicit in Solidity
     string favoriteNumberInText = "Five";
     int256 num = -5;
     address myAddress = 0x4D088Fe37422199dEAA6bc32FD7514b35C175908;
