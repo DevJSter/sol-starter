@@ -9,8 +9,8 @@ async function main() {
 
   // Not functionable in version 6^ ethers ----->
   
-  // await simpleStorage.deployed()
-  // console.log(`Deployed contract to: ${simpleStorage.address}`)
+  await simpleStorage.deployed()
+  console.log(`Deployed contract to: ${simpleStorage.address}`)
 
   //______________________________________________
   
