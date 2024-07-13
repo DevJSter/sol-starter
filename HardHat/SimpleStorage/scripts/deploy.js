@@ -16,7 +16,7 @@ async function main() {
   if (network.config.chainId === 11155111 && process.env.ETHERSCAN_API_KEY) {
     console.log("Waiting for block confirmations...")
     // Not functionable in version 6^ ethers ----->
-    await simpleStorage.deploymentTransaction().wait(6)
+    await simpleStorage.deployed().wait(6)
     await verify(simpleStorage.target, [])
   }
 
