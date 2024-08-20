@@ -42,12 +42,6 @@ contract Escrow is Ownable, IEscrow {
         _;
     }
 
-    // Modifier to check if the caller is the seller
-    modifier onlySeller() {
-        require(msg.sender == seller, "Caller is not the seller");
-        _;
-    }
-
     // Events to emit when funds are deposited, released, or refunded
     event FundsDeposited(address indexed buyer, uint256 amount);
     event FundsReleased(address indexed seller, uint256 amount);
@@ -87,11 +81,11 @@ contract Escrow is Ownable, IEscrow {
 
     // Fallback function to accept Ether directly
     fallback() external payable {
-        deposit();
+        escrowBalance += msg.value;
     }
 
     // Receive function to accept Ether directly
     receive() external payable {
-        deposit();
+        escrowBalance += msg.value;
     }
 }
