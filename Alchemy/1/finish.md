@@ -7,7 +7,9 @@ This week, we went through the foundations of blockchain technology: cryptograph
 Let's quickly summarize some of the important topics we learned this week (hint, these are important for the next weeks!):
 
 hash functions: any function that takes some data and produces a digest of a fixed size.
-hash
+
+![image](https://github.com/user-attachments/assets/67692b6c-06fc-4438-9429-e75f9061246b)
+
 
 That's easy enough. What is very important is remembering the properties of a strong hash function:
 
