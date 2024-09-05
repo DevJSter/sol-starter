@@ -41,3 +41,23 @@ In order to overpower this network and force your own version of the truth, you 
 
  Understanding this part has quite a bit to do with the underlying data structure of the blockchain itself! We'll go this in further detail later.
 
+// Supplemental Resources on Proof of Work
+
+> History
+Adam Beck created the concept of HashCash as a way to combat email spamming. He presented this idea to the cypherpunk mailing list where several ideas were conceived afterwards:
+
+Hal Finney invented Reusable Proofs of Work using the HashCash concept.
+
+Wei Dai invented B-Money also using the HashCash concept.
+
+Bitcoin Mining
+Bitcoin uses Mining & Proof of Work to create a decentralized clearing house. Transactions are added to each mined block. Blocks are, on average, mined every 10 minutes. This, of course, varies due to the randomness of finding a valid hash.
+
+The Target is adjusted so that, as more machines enter the network and the hash power increases, the difficulty of finding a new block increases (and vice-versa). This allows bitcoin to scale to its network size.
+
+Mining Pools
+There are many different types of Mining Pools in Bitcoin. As a user who wants to mine Bitcoin, you may join a mining pool so you get plenty of consistent, small rewards rather than one random large prize by finding the block (which, depending on your hash power, may not happen for a long time!).
+
+ The current bitcoin coinbase reward is 6.25, which is roughly $60k USD at the time of writing.
+
+For a good comparison of the mining pools see this document.
