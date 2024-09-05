@@ -7,7 +7,8 @@ Blockchains are just fancy databases. Databases have designs based on the data t
 Blockchain Architecture
 A blockchain is a distributed database of a list of validated blocks. Each block contains data in the form of transactions and each block is cryptographically tied to its predecessor, producing a "chain".
 
-bchain_architecture
+![image](https://github.com/user-attachments/assets/1f619d98-2508-4a66-974d-d665fd88524a)
+
 
 Take a look at the diagram above. Which one do you think most resembles a blockchain's data structure? (psst, it's the right-most one!)
 
@@ -17,7 +18,8 @@ In computer science, the term node simply means a unit or member of a data struc
 
 A blockchain has nodes scattered all over the world all acting together in real-time. There is no central administrator, say a "supernode", responsible for verifying any changes to the state of data, all nodes are equal members of the network. This means that the network will perform the same, no matter what node you interact with to update data. In other words, blockchains are peer-to-peer networks.
 
-p2p
+![image](https://github.com/user-attachments/assets/cd750768-5ea4-4d30-a53c-ff8fe7937401)
+
 
 In the image above, the server-based network contains one central server solely responsible for keeping the state of data. In the peer-to-peer network, there is not even a central server - everyone maintains a copy of the state of data.
 
@@ -38,7 +40,9 @@ A blockchain has a list of blocks. It starts with a single block, called the gen
 New term! The genesis block is simply the first block in a blockchain. The block should have an index of 0 - this is computer science, everything is 0-indexed!
 
 Step 4-13 explains the information that each block stores:
-data
+
+![image](https://github.com/user-attachments/assets/144fcce6-bd12-4802-8966-f6fd6b378170)
+
 
 index: the position of the block in the chain.
 timestamp: a record of when the block was created. This is typically a UNIX timestamp, aka: the number of seconds since January 1st, 1970. This data is important since it establishes a blockchain as a chronological time-based structure.
@@ -77,6 +81,8 @@ The process of finding valid hash outputs, via changing the nonce value, is call
 A miner starts a "candidate block" with a nonce of 0 and keep incrementing it by 1 until we find a valid hash:
 
 hash
+
+![image](https://github.com/user-attachments/assets/95f286f6-36f2-4ee4-9aa0-e367a65bb26b)
 
 Data Integrity in a Blockchain Data Structure
 If a blockchain is just a distributed database, how does the data it stores maintain data integrity? In other words, how do we make sure the state of the data is never corrupted in any way (ie, data lost, data maliciously manipulated, etc)?
