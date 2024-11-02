@@ -8,9 +8,10 @@ import {SimpleStorage} from "../src/SimpleStorage.sol";
 contract SimpleStorageScript is Script {
         function run() external returns(SimpleStorage) {
                 vm.startBroadcast();
-                SimpleStorage simpleS+torage = new SimpleStorage();
-
+                SimpleStorage simpleStorage = new SimpleStorage();
                 vm.stopBroadcast();
+
+        
                 return simpleStorage;
         }
 }
