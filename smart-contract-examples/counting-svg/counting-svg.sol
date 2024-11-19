@@ -52,7 +52,6 @@ contract CountSVG is ERC721, ERC721URIStorage, Ownable {
             abi.encodePacked("data:application/json;base64,", json)
         );
         // Update the URI
-
         _setTokenURI(0, finalTokenURI);
     }
 
